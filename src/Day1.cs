@@ -1,4 +1,5 @@
 using System.ComponentModel.Design;
+using System.Diagnostics;
 
 namespace AoC2025;
 using System;
@@ -9,8 +10,6 @@ public class Day1
     {
         Part1();
         Part2();
-        int answer = 0;
-        Console.WriteLine($"{CalculatePart2(ref answer, "L250")}");
     }
 
     private void Part1()
