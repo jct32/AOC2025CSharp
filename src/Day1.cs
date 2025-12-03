@@ -1,6 +1,3 @@
-using System.ComponentModel.Design;
-using System.Diagnostics;
-
 namespace AoC2025;
 using System;
 

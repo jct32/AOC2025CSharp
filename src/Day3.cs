@@ -1,6 +1,3 @@
-using System.Runtime.InteropServices.ComTypes;
-using System.Runtime.InteropServices.JavaScript;
-
 namespace AoC2025;
 
 public class Day3
