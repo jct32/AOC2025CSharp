@@ -23,7 +23,7 @@ public class Day3
         Console.WriteLine($"Part 1: {answer}");
     }
 
-    private int ParseBatteryBank(string batteryBank)
+    public int ParseBatteryBank(string batteryBank)
     {
         var firstIndex = -1;
         var secondIndex = -1;
@@ -63,10 +63,10 @@ public class Day3
             answer += SortBatteryBank(batteryBank);
         }
         
-        Console.WriteLine($"Part 1: {answer}");
+        Console.WriteLine($"Part 2: {answer}");
     }
 
-    private ulong SortBatteryBank(string batteryBank)
+    public ulong SortBatteryBank(string batteryBank)
     {
         string answerString = string.Empty;
         var currentIndex = 0;
