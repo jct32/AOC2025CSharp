@@ -2,7 +2,7 @@ namespace AoC2025;
 
 public class Day3
 {
-    private static readonly string Path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "/Input/day3.txt";
+    private static readonly string Path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName + "/Input/day3.txt";
     private static readonly string Contents = File.ReadAllText(Path);
     private static string[] _batteryBanks = Contents.Split('\n');
     public void RunDay()

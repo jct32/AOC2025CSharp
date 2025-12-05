@@ -11,7 +11,7 @@ public class Day2
     private void Part1()
     {
         ulong answer = 0;
-        var path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+        var path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
         path += "/Input/Day2.txt";
         var contents = File.ReadAllText(path);
         var idRanges = contents.Split(',');
@@ -56,7 +56,7 @@ public class Day2
     private void Part2()
     {
         ulong answer = 0;
-        var path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+        var path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
         path += "/Input/Day2.txt";
         var contents = File.ReadAllText(path);
         var idRanges = contents.Split(',');

@@ -2,7 +2,7 @@ namespace AoC2025;
 
 public class Day4
 {
-    private static readonly string Path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName +
+    private static readonly string Path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName +
                                           "/Input/Day4.txt";
 
     private static readonly string Contents = File.ReadAllText(Path);

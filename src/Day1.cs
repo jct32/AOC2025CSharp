@@ -11,7 +11,7 @@ public class Day1
 
     private void Part1()
     {
-        var path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+        var path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
         path += "/Input/Day1.txt";
         var contents = File.ReadAllText(path);
         var lines = contents.Split("\n");
@@ -101,7 +101,7 @@ public class Day1
     
     private void Part2()
     {
-        var path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+        var path = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
         path += "/Input/Day1.txt";
         var contents = File.ReadAllText(path);
         var lines = contents.Split("\n");
